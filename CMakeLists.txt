@@ -24,10 +24,10 @@ else()
     set(TSDUCK_ROOT "/usr" CACHE PATH "TSDuck installation directory")
     set(TSDUCK_INCLUDE_DIR "${TSDUCK_ROOT}/include")
     set(TSDUCK_LIBRARY_DIR "${TSDUCK_ROOT}/lib")
-    set(TSDUCK_LIB "${TSDUCK_LIBRARY_DIR}/tsduck.so")
-    set(TSCORE_LIB "${TSDUCK_LIBRARY_DIR}/tscore.so")
+    set(TSDUCK_LIB "${TSDUCK_LIBRARY_DIR}/libtsduck.so")
+    set(TSCORE_LIB "${TSDUCK_LIBRARY_DIR}/libtscore.so")
     set(TSDUCK_PLUGIN_DIR "${TSDUCK_ROOT}/lib/tsduck")
-    set(PLUGIN_FILE "${TSDUCK_PLUGIN_DIR}/${PLUGIN_NAME}.dll")
+    set(PLUGIN_FILE "${TSDUCK_PLUGIN_DIR}/${PLUGIN_NAME}.so")
 endif()
 
 
