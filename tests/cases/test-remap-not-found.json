@@ -1,0 +1,11 @@
+{
+    "name": "sample plugin with wrong rules file ",
+    "plugin_args": [
+        "--splice-pid", "96",
+        "--rules", "data/rules/NOT_FOUND.json"
+    ],
+    "monitor": false,
+    "expect": {
+        "exit_code": 1
+    }
+}

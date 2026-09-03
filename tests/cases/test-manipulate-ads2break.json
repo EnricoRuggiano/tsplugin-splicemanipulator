@@ -1,0 +1,25 @@
+{
+    "name": "translate TimeSignals segmentation_type_id 0x30->0x22 and 0x31->0x23",
+    "splice_pid": 96,
+    "plugin_args": [
+        "--splice-pid", "96",
+        "--rules", "data/rules/rules-ads2break.json"
+    ],
+    "monitor": true,
+    "expect": {
+        "exit_code": 0,
+        "contains": [
+            "Manipulating Segmentation Descriptor Type Id  0x00000030 ->  0x00000022",
+            "Manipulating Segmentation Descriptor Type Id  0x00000031 ->  0x00000023"
+        ],
+        "matches": [
+            "\"segmentation_type_id\"\\s*:\\s*34",
+            "\"segmentation_type_id\"\\s*:\\s*35"
+        ],
+        "not_matches": [
+            "\"segmentation_type_id\"\\s*:\\s*48",
+            "\"segmentation_type_id\"\\s*:\\s*49"
+        ]
+
+    }
+}

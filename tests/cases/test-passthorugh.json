@@ -1,0 +1,20 @@
+{
+    "name": "sample plugin does not do any manipulation",
+    "splice_pid": 96,
+    "plugin_args": [
+        "--splice-pid", "96"
+    ],
+    "monitor": true,
+    "expect": {
+        "exit_code": 0,
+        "matches": [
+            "\"segmentation_type_id\"\\s*:\\s*48",
+            "\"segmentation_type_id\"\\s*:\\s*49"
+
+        ],
+        "not_matches": [
+            "\"segmentation_type_id\"\\s*:\\s*34",
+            "\"segmentation_type_id\"\\s*:\\s*35"
+        ]
+    }
+}

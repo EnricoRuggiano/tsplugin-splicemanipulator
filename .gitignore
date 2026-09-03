@@ -1,0 +1,54 @@
+# C++
+build/
+
+*.vcxproj
+*.vcxproj.user
+*.sln
+
+*.dll
+*.lib
+*.obj
+*.pdb
+
+x64/
+Debug/
+Release/
+.vscode
+.vs/
+
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# video
+**.ts
+!tests/**/synthetic.ts
+
+# plugin references
+src/**.cpp
+!src/tsplugin_splicemanipulator.cpp

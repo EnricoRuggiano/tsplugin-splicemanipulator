@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsduck>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <splice_schedule>
+      <splice_event splice_event_id="0x000186B7" splice_event_cancel="false" out_of_network="true" unique_program_id="0x0001" avail_num="1" avails_expected="1" utc_splice_time="1980-01-06 00:00:10">
+        <break_duration auto_return="true" duration="180,000"/>
+      </splice_event>
+    </splice_schedule>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <splice_insert splice_event_id="0x000186B7" splice_event_cancel="false" out_of_network="true" splice_immediate="false" unique_program_id="0x0001" avail_num="1" avails_expected="1" pts_time="90,000">
+      <break_duration auto_return="true" duration="180,000"/>
+    </splice_insert>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <time_signal pts_time="90,000"/>
+    <splice_segmentation_descriptor identifier="0x43554549" segmentation_event_id="0x000186B7" segmentation_event_cancel="false" segmentation_duration="180,000" segmentation_type_id="0x30" segment_num="1" segments_expected="1">
+      <segmentation_upid type="0x00">
+        00
+      </segmentation_upid>
+    </splice_segmentation_descriptor>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <splice_insert splice_event_id="0x000186B8" splice_event_cancel="false" out_of_network="false" splice_immediate="false" unique_program_id="0x0001" avail_num="1" avails_expected="1" pts_time="270,000"/>
+  </splice_information_table>
+  <splice_information_table protocol_version="0" pts_adjustment="0" tier="0x0FFF">
+    <time_signal pts_time="270,000"/>
+    <splice_segmentation_descriptor identifier="0x43554549" segmentation_event_id="0x000186B8" segmentation_event_cancel="false" segmentation_type_id="0x31" segment_num="1" segments_expected="1">
+      <segmentation_upid type="0x00">
+        00
+      </segmentation_upid>
+    </splice_segmentation_descriptor>
+  </splice_information_table>
+</tsduck>

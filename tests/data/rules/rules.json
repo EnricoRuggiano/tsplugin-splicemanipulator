@@ -1,0 +1,20 @@
+{
+    "manipulate": [
+        {
+            "in": 48,
+            "out": 34
+        },
+        {
+            "in": 49,
+            "out": 35
+        }
+    ],
+    "filter": [
+        {
+            "command": 4
+        },
+        {
+            "command": 5
+        }
+    ]
+}

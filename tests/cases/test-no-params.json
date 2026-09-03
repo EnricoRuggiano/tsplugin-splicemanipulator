@@ -1,0 +1,11 @@
+{
+    "name": "sample plugin without any parameter must fail",
+    "plugin_args": [],
+    "monitor": false,
+    "expect": {
+        "exit_code": 1,
+        "contains": [
+            "No --splice-pid option provided"
+        ]
+    }
+}

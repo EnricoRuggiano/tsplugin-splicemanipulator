@@ -1,0 +1,15 @@
+{
+    "name": "filter spliceinserts",
+    "splice_pid": 96,
+    "plugin_args": [
+        "--splice-pid", "96",
+        "--rules", "data/rules/filter-spliceinserts.json"        
+    ],
+    "monitor": true,
+    "expect": {
+        "exit_code": 0,
+        "not_matches": [
+            "\"#name\": \"splice_insert\""
+        ]
+    }
+}

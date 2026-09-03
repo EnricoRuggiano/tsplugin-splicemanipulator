@@ -1,0 +1,15 @@
+{
+    "name": "filter timesignals",
+    "splice_pid": 96,
+    "plugin_args": [
+        "--splice-pid", "96",
+        "--rules", "data/rules/filter-timesignals.json"        
+    ],
+    "monitor": true,
+    "expect": {
+        "exit_code": 0,
+        "not_matches": [
+            "\"#name\": \"time_signal\""
+        ]
+    }
+}
