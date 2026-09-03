@@ -55,6 +55,9 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE
     "${TSCORE_LIB}"
 )
 
+# TSDuck plugins must not have the "lib" prefix added by CMake on Unix
+set_target_properties(${PLUGIN_NAME} PROPERTIES PREFIX "")
+
 # -------------------------------------------------------------------------
 # MSVC options
 # -------------------------------------------------------------------------
